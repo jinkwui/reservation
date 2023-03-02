@@ -22,6 +22,8 @@ driver = webdriver.Chrome(service=service, options=options)
 # 이때 사용할 수있는게 webdriver manager이다
 # 버전업이 되더라도 진행된다
 
+driver.maximize_window()
+
 # 일자
 tDate = "2023-03-15"
 # 사이트선택
