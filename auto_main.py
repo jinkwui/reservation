@@ -10,7 +10,7 @@ def main():
     # 박수 - check_day
     #   1: 1박2일, 2:2박3일
     # 인원(대인으로 퉁) - check_member
-    # 예약자 정보 - check_name, check_phone, check_email, check_birth(yyyymmdd), check_car
+    # 예약자 정보 - check_name, check_phone, check_email, check_birth(yymmdd), check_car
     json_data = {
         'check_date': '2023-04-22',
         'check_site': '10',
@@ -20,7 +20,7 @@ def main():
         'check_name': '홍길동',
         'check_phone': '01011112222',
         'check_email': '홍길동@naver.com',
-        'check_birth': '19000101',
+        'check_birth': '800101',
         'check_car': '00하0001'
     }
     check_json_data = {
