@@ -11,9 +11,11 @@ def chrome_driver_on():
     options.add_experimental_option('detach', True)  # 브라우저 바로 닫힘 방지
     options.add_experimental_option("excludeSwitches", ['enable-logging'])  # 불필요한 메시지 제거
 
-    service = Service(ChromeDriverManager().install())
+    #service = Service(ChromeDriverManager().install())
 
-    driver = webdriver.Chrome(service=service, options=options)
+    #driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(r"C:\Users\chromedriver.exe")
+
     # 보통 크롬드라이버를 맞춰서 다운 받은 뒤 실행시킨다 하지만 이렇게하면 계속 버전에 맞춰 다운을 받아줘야함
     # 이때 사용할 수있는게 webdriver manager이다
     # 버전업이 되더라도 진행된다
