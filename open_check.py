@@ -28,6 +28,10 @@ def open_paju_check(url, input_data, site_info):
             print('retry!', url_with_params)
             print('counter' , counter)
             counter += 1
+
+            if counter == 10:
+                print('10회 Try Fail!!!!!!!!')
+                return False
         else:
             button_cnt = count_elements(body.decode('euc-kr'), input_data.get('open_check_body_button'))
             input_data.update({'button_cnt':button_cnt})
